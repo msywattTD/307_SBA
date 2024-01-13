@@ -1,0 +1,121 @@
+
+.container-fluid {
+    width: 100%
+}
+
+#searchBar {
+    position:absolute;
+    left: 50%;
+}
+
+@media (min-width: 1200px){
+    #searchBar {   
+        margin-left: -140px;
+        width: 280px;
+    }
+}
+
+#displayMode {
+    margin-left:auto;
+    
+}
+
+#btnSwitch {
+    background-color: rgb(200,200,200);
+    border-color: rgb(175 175, 175);
+}
+
+#darkToggle {
+    display: none;
+}
+
+.img-thumbnail, .thumbnail {
+    width: fit-content;
+    block-size: fit-content;
+}
+
+.thumbnail-info {
+    height: 50px;
+    padding: 4px;
+    background-color: rgb(65,65,65);
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#loginForm, #advSearch {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#userName, #password {
+    width: 300px;
+    margin-top: 40px;
+    height: 40px;
+}
+
+#login, #search {
+    width: 200px;
+    margin-top: 40px;
+    font-size: 28px;
+    height: 50px;
+}
+
+#login:hover, #search:hover {
+    background-color: rgb(125 125, 125);
+}
+
+#upload {
+    width: 600px;
+    height: 600px;
+    border: 2px rgb(73,80,87) solid;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(44,48,52);
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#upload:hover {
+    background-color: rgb(73,80,87)
+}
+
+#uploadCircle {
+    align-self: center;
+}
+
+#tags, #posterID, #datePosted {
+    width: 500px;
+    margin-top: 40px;
+    height: 40px;
+}
+
+/* animation reqs */
+
+#logo {
+    transition: all 1s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#animationReq {
+    transition: all 1s ease-in-out;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#animationReq:hover {
+    background-color: pink;
+}

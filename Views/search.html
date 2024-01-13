@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<!-- 3 pages, home sorted by date posted recency, upload page, and a search page -->
+<body>
+    <!-- Nav Bar REVISIST WITH REACT -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/Consequence_200x200.jpg" alt="logo" id="logo" width="32" height="32">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./upload.html">Upload</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./search.html">Advanced Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="searchBar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+                <button class="btn btn-primary" id="btnSwitch"><img src="../images/light_mode.png" id="lightToggle"><img src="../images/dark_mode.png" id="darkToggle"></button>
+          </div>
+        </div>
+      </nav>
+      <!-- ADV SEARCH CONTENT -->
+      <div id="loginContainer"  style="margin-top: 50px;">
+        <fieldset>
+            <h2>Advanced Search</h2>
+                <form id="advSearch">
+                    <input for="tags" id="tags" placeholder="tags"></input>
+                    <input for="posterID" id="posterID" placeholder="Posted By"></input>
+                    <input for="datePosted" id="datePosted" placeholder="Date Posted"></input>
+                    <button type="submit" id="search" value="search">SEARCH</button>
+                </form>
+        </fieldset>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

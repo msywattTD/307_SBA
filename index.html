@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+</head>
+<!-- 3 pages, home sorted by date posted recency, upload page, and a search page -->
+<body>
+    <!-- Nav Bar REVISIST WITH REACT -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/Consequence_200x200.jpg" alt="logo" id="logo" width="32" height="32">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Views/upload.html">Upload</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Views/search.html">Advanced Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Views/login.html">Login</a>
+              </li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span id="sortByText">Sort By</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" id="sortDefault">Default</a></li>
+                  <li><a class="dropdown-item" id="sortDate">Date</a></li>
+                  <li><a class="dropdown-item" id="sortPoster">Poster</a></li>
+                </ul>
+              </div>
+            </ul>
+            <form class="d-flex" role="search" id="searchBar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+                <button class="btn btn-primary" id="btnSwitch"><img src="./images/light_mode.png" id="lightToggle"><img src="./images/dark_mode.png" id="darkToggle"></button>
+          </div>
+        </div>
+      </nav>
+    <!-- content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="thumbnail-container">
+            <img src="./images/dog1.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog4.webp" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog13.gif" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>            
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img src="./images/dog2.webp" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog5.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog8.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img src="./images/dog3.webp" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog6.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog9.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img src="./images/dog10.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog11.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+          <div class="thumbnail-container">
+            <img src="./images/dog12.jpg" class="img-thumbnail">
+            <div class="thumbnail-info">Dog</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
